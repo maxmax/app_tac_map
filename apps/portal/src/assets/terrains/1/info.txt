@@ -1,0 +1,9 @@
+Heightmap name: HeightMapTest1
+
+Longitude: 31.31997
+Latitude: 49.72383
+Min Height: 86.2
+Max Height: 231
+Water contours: true
+Height contours: false
+Zoom: 11.506119428375186

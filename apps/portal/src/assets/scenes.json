@@ -1,0 +1,297 @@
+[
+  {
+    "id": 0,
+    "name": "XS532",
+    "sceneObjects": [
+      {
+        "id": 0,
+        "type": "PointSphere",
+        "args": [1.7, 30, 30],
+        "position": [0, 0, 0],
+        "visible": true,
+        "opacity": 1,
+        "name": "Default",
+        "texture": "assets/texture/Earth-nut.jpg",
+        "rotation": 0.0006,
+        "dialogInfo": {
+          "title": "Info",
+          "text": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.",
+          "next": {
+            "title": "Detail",
+            "value": "/systems/0/terrains/0"
+          },
+          "table": [
+            {
+              "name": "alternative_names",
+              "title": "Alternative names",
+              "value": [
+                "Gaia", "Terra", "Tellus", "the world", "the globe"
+                ]
+            },
+            {
+              "name": "adjectives",
+              "title": "Adjectives",
+              "value": [
+                "Earthly", "terrestrial", "terran", "tellurian"
+              ]
+            },
+            {
+              "name": "adjectives",
+              "title": "Orbital characteristics",
+              "value": "Epoch J2000[n 1]",
+              "table": [
+                {
+                  "name": "aphelion",
+                  "title": "Aphelion",
+                  "value": "152100000 km (94500000 mi)[n 2]"
+                },
+                {
+                  "name": "perihelion",
+                  "title": "Perihelion",
+                  "value": "147095000 km (91401000 mi)[n 2]"
+                }
+              ]
+            }
+          ]
+        },
+        "terrains": [
+          {
+            "id": 0,
+            "name": "Map 1",
+            "pointLight": [10, -10, -10],
+            "perspectiveCamera": {
+              "position": [0.5, 0.5, 0.5],
+              "near": 0.01,
+              "far": 1000,
+              "aspect": 2,
+              "fov": 40
+            },
+            "terrainFog": {
+              "color": "#656662",
+              "density": 0.4
+            },
+            "plane": {
+              "texturemap": "assets/terrains/1/map.png",
+              "uluruHeightmap": "assets/terrains/1/heightmap.png",
+              "geometry": [1024, 1024, 256, 256],
+              "shaderMaterial": {
+                "bumpScale": {
+                  "value": 80
+                }
+              }
+            },
+            "objects": [
+              {
+                "id": 0,
+                "args": [0.01, 0.08, 0.01],
+                "position": [-0.24, 0, 0.2],
+                "color": "red",
+                "dialog": {
+                  "title": "Alfa",
+                  "text": "Let help apps determine location 1",
+                  "next": {
+                    "title": "Update",
+                    "value": "#"
+                  }
+                }
+              },
+              {
+                "id": 1,
+                "args": [0.01, 0.2, 0.01],
+                "position": [0.15, 0, 0.2],
+                "dialog": {
+                  "title": "Bravo",
+                  "text": "Let help apps determine location 2"
+                }
+              },
+              {
+                "id": 2,
+                "args": [0.02, 0.08, 0.02],
+                "position": [0.14, 0, -0.14],
+                "color": "red",
+                "dialog": {
+                  "title": "Delta",
+                  "text": "Let help apps determine location 3"
+                }
+              }
+            ]
+          },
+          {
+            "id": 1,
+            "name": "Map 2",
+            "pointLight": [10, -10, -10],
+            "perspectiveCamera": {
+              "position": [0.5, 0.5, 0.5],
+              "near": 0.01,
+              "far": 1000
+            },
+            "terrainFog": {
+              "color": "#656662",
+              "density": 0.4
+            },
+            "plane": {
+              "texturemap": "assets/terrains/2/map.png",
+              "uluruHeightmap": "assets/terrains/2/heightmap.png",
+              "geometry": [1024, 1024, 256, 256],
+              "shaderMaterial": {
+                "bumpScale": {
+                  "value": 80
+                }
+              }
+            },
+            "objects": []
+          },
+          {
+            "id": 2,
+            "name": "Map 3",
+            "pointLight": [10, -10, -10],
+            "perspectiveCamera": {
+              "position": [0.5, 0.5, 0.5],
+              "near": 0.01,
+              "far": 1000
+            },
+            "terrainFog": {
+              "color": "#686A58",
+              "density": 0.2
+            },
+            "plane": {
+              "texturemap": "assets/terrains/3/map.png",
+              "uluruHeightmap": "assets/terrains/3/heightmap.png",
+              "geometry": [2048, 2048, 256, 256],
+              "shaderMaterial": {
+                "bumpScale": {
+                  "value": 380
+                }
+              }
+            },
+            "objects": [
+              {
+                "id": 0,
+                "args": [0.02, 0.04, 0.02],
+                "position": [-0.4, 0.01, 0.2]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "type": "PointSphere",
+        "args": [1.72, 30, 30],
+        "position": [0, 0, 0],
+        "visible": true,
+        "opacity": 0.6,
+        "name": "Default Planet Atmosphere",
+        "texture": "assets/texture/Earth-clouds.png",
+        "rotation": 0.0006
+      },
+      {
+        "id": 2,
+        "type": "PointSphere",
+        "args": [0.15, 20, 20],
+        "position": [1.6, 0, 2.2],
+        "radian": {
+          "rotationSpeed": 0.003,
+          "axis": [0, 1.6, 0]
+        },
+        "visible": true,
+        "name": "satellite 2",
+        "opacity": 1,
+        "texture": "assets/texture/Solarsystemscope_texture_8k_moon.jpg",
+        "rotation": 0.0012,
+        "dialogInfo": {
+          "title": "Moon info",
+          "text": "Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.",
+          "next": {
+            "title": "Detail",
+            "value": "/systems/0/terrains/0"
+          },
+          "table": [
+            {
+              "name": "alternative_names",
+              "title": "Alternative names",
+              "value": [
+                "Gaia", "Terra", "Tellus", "the world", "the globe"
+                ]
+            },
+            {
+              "name": "adjectives",
+              "title": "Adjectives",
+              "value": [
+                "Earthly", "terrestrial", "terran", "tellurian"
+              ]
+            },
+            {
+              "name": "adjectives",
+              "title": "Orbital characteristics",
+              "value": "Epoch J2000[n 1]",
+              "table": [
+                {
+                  "name": "aphelion",
+                  "title": "Aphelion",
+                  "value": "152100000 km (94500000 mi)[n 2]"
+                },
+                {
+                  "name": "perihelion",
+                  "title": "Perihelion",
+                  "value": "147095000 km (91401000 mi)[n 2]"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": 3,
+        "type": "GlbObject",
+        "args": [0, 0, 0],
+        "position": [2, 0, 2.2],
+        "radian": {
+          "rotationSpeed": 0.01,
+          "axis": [0, 2, 0]
+        },
+        "scale": [0.05, 0.05, 0.05],
+        "visible": true,
+        "name": "satellite 3",
+        "opacity": 1,
+        "gltfUrl": "assets/models/objectL.glb",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "XD532",
+    "sceneObjects": [
+      {
+        "id": 0,
+        "type": "PointSphere",
+        "args": [1.7, 30, 30],
+        "position": [0, 0, 0],
+        "visible": true,
+        "opacity": 1,
+        "name": "Planet",
+        "texture": "assets/texture/Earth-nut.jpg",
+        "rotation": 0.0006
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "MX533",
+    "sceneObjects": [
+      {
+        "id": 0,
+        "type": "GlbObject",
+        "args": [0, 0, 0],
+        "position": [0, 0, 0],
+        "scale": [1.5, 1.5, 1.5],
+        "visible": true,
+        "name": "satellitedev",
+        "opacity": 1,
+        "gltfUrl": "assets/models/objectL.glb",
+        "rotation": 0
+      }
+    ]
+  }
+]
